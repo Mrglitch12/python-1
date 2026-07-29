@@ -1,0 +1,30 @@
+def check_vowel(check):
+    if check in vowels:
+        print(check,"is a vowels sound")
+    else:
+        print(check,"is not a vowel sound")    
+
+vowels = "aeiouAEIOU"
+check = input("enter a vowel sound: ")
+check_vowel(check)
+
+
+
+
+
+
+
+
+
+
+def login_system(username, password, is_verified, attempts):
+    if attempts >= 3:
+        print("Account Locked")
+    elif not username or not password:
+        print("Invalid Input")
+    elif username != "admin" or password != "1234":
+        print("Incorrect Credentials")
+    elif not is_verified:
+        print("Please verify your account")
+    else:
+        print("Login Successful")
